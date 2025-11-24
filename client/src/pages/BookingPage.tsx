@@ -13,6 +13,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { useCart } from '@/context/CartContext';
 import { format } from 'date-fns';
 import { useToast } from '@/hooks/use-toast';
+import { ImageCarousel } from '@/components/ImageCarousel';
 
 const travelerSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -57,6 +58,7 @@ export default function BookingPage() {
   }, [currentTraveler, cart, form]);
 
   const saveCurrentFormData = () => {
+    if (!cart) return;
     const currentValues = form.getValues();
     if (currentValues.name || currentValues.age || currentValues.cnic || currentValues.contact) {
       const updatedDetails = [...cart.travelerDetails];
@@ -123,10 +125,10 @@ export default function BookingPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="aspect-video rounded-md overflow-hidden">
-                  <img 
-                    src={cart.package.image} 
-                    alt={cart.package.name}
-                    className="w-full h-full object-cover"
+                  <ImageCarousel 
+                    images={cart.package.gallery} 
+                    packageName={cart.package.name}
+                    className="w-full h-full"
                   />
                 </div>
 

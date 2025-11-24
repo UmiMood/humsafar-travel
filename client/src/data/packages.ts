@@ -4,6 +4,17 @@ import kumratImage from '@assets/generated_images/kumrat_valley_waterfall_forest
 import sharanImage from '@assets/generated_images/sharan_forest_pine_trees.png';
 import shogranImage from '@assets/generated_images/shogran_siri_paye_meadows.png';
 
+import skarduLake from '@assets/generated_images/skardu_lake_mountain_vista.png';
+import deosaiPlains from '@assets/generated_images/deosai_plains_wildflowers.png';
+import shigarFort from '@assets/generated_images/shigar_fort_architecture.png';
+import fairyCamping from '@assets/generated_images/fairy_meadows_camping_view.png';
+import fairyTrail from '@assets/generated_images/fairy_meadows_hiking_trail.png';
+import kumratRiver from '@assets/generated_images/kumrat_valley_river_bridge.png';
+import jahazBanda from '@assets/generated_images/jahaz_banda_alpine_meadow.png';
+import sharanTrail from '@assets/generated_images/sharan_forest_woodland_trail.png';
+import shogranPanorama from '@assets/generated_images/shogran_hilltop_panorama.png';
+import siriPaye from '@assets/generated_images/siri_paye_meadows_landscape.png';
+
 export interface Package {
   id: string;
   name: string;
@@ -14,6 +25,7 @@ export interface Package {
   bestTime: string;
   pricePerPerson: number;
   image: string;
+  gallery: string[];
   description: string;
   highlights: string[];
   itinerary: DayItinerary[];
@@ -38,6 +50,7 @@ export const packages: Package[] = [
     bestTime: 'April–October',
     pricePerPerson: 75000,
     image: skarduImage,
+    gallery: [skarduImage, skarduLake, deosaiPlains, shigarFort],
     description: 'Explore the stunning valleys of Skardu including Shangrila Lake, Khaplu Palace, and the mesmerizing Katpana Cold Desert.',
     highlights: [
       'Boating in Upper Kachura Lake',
@@ -118,6 +131,7 @@ export const packages: Package[] = [
     bestTime: 'May–October',
     pricePerPerson: 45000,
     image: fairyMeadowsImage,
+    gallery: [fairyMeadowsImage, fairyCamping, fairyTrail],
     description: 'Trek through alpine meadows with breathtaking views of Nanga Parbat, the ninth highest mountain in the world.',
     highlights: [
       '3-4 hour trek to Fairy Meadows',
@@ -191,6 +205,7 @@ export const packages: Package[] = [
     bestTime: 'May–October',
     pricePerPerson: 50000,
     image: kumratImage,
+    gallery: [kumratImage, kumratRiver, jahazBanda],
     description: 'Experience the pristine beauty of Kumrat Valley with its lush forests, cascading waterfalls, and the stunning Katora Lake.',
     highlights: [
       'Pine forests & river walks',
@@ -270,6 +285,7 @@ export const packages: Package[] = [
     bestTime: 'April–October',
     pricePerPerson: 18000,
     image: sharanImage,
+    gallery: [sharanImage, sharanTrail],
     description: 'A peaceful escape into Sharan Forest with camping under the stars, forest trails, and optional trek to Hans Sar Lake.',
     highlights: [
       'Sunrise forest walk',
@@ -320,6 +336,7 @@ export const packages: Package[] = [
     bestTime: 'April–October',
     pricePerPerson: 15000,
     image: shogranImage,
+    gallery: [shogranImage, shogranPanorama, siriPaye],
     description: 'Scenic green meadows of Shogran and Siri Paye with panoramic mountain views, horse riding, and chairlift experience.',
     highlights: [
       'Explore Shogran meadows',

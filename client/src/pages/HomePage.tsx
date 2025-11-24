@@ -12,6 +12,7 @@ import { useCart } from '@/context/CartContext';
 import { format } from 'date-fns';
 import heroImage from '@assets/generated_images/pakistan_hunza_valley_hero.png';
 import { useToast } from '@/hooks/use-toast';
+import { ImageCarousel } from '@/components/ImageCarousel';
 
 export default function HomePage() {
   const [, setLocation] = useLocation();
@@ -215,10 +216,10 @@ export default function HomePage() {
           {filteredPackages.map(pkg => (
             <Card key={pkg.id} className="overflow-hidden hover-elevate transition-all" data-testid={`card-package-${pkg.id}`}>
               <div className="aspect-[4/3] overflow-hidden">
-                <img 
-                  src={pkg.image} 
-                  alt={pkg.name}
-                  className="w-full h-full object-cover"
+                <ImageCarousel 
+                  images={pkg.gallery} 
+                  packageName={pkg.name}
+                  className="w-full h-full"
                 />
               </div>
 
