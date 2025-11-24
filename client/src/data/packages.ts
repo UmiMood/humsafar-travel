@@ -37,6 +37,7 @@ export interface DayItinerary {
   title: string;
   activities: string[];
   accommodation?: string;
+  meals?: string[];
 }
 
 export const packages: Package[] = [
@@ -68,7 +69,8 @@ export const packages: Package[] = [
           'Stop at Babusar Top if open',
           'Night stay in Chilas / Naran / Besham'
         ],
-        accommodation: 'Mountain View Hotel, Chilas / Imperial Inn Naran'
+        accommodation: 'Mountain View Hotel, Chilas / Imperial Inn Naran',
+        meals: ['Breakfast on the road', 'Lunch at highway rest stop', 'Dinner at hotel']
       },
       {
         day: 2,
@@ -78,7 +80,8 @@ export const packages: Package[] = [
           'Drive alongside Indus River + rock carvings',
           'Arrival in Skardu, evening by Kachura Lake'
         ],
-        accommodation: 'Shangrila Resort / Hotel One Upper Kachura'
+        accommodation: 'Shangrila Resort / Hotel One Upper Kachura',
+        meals: ['Breakfast at hotel', 'Packed lunch for journey', 'Dinner at resort']
       },
       {
         day: 3,
@@ -87,7 +90,8 @@ export const packages: Package[] = [
           'Boating in Upper Kachura',
           'Visit Shangrila Lake',
           'Optional short hike to Soq Valley'
-        ]
+        ],
+        meals: ['Breakfast at resort', 'Lakeside lunch', 'Dinner at hotel']
       },
       {
         day: 4,
@@ -96,7 +100,8 @@ export const packages: Package[] = [
           'Drive to Shigar Valley',
           'Visit Shigar Fort (Serena), Blind Lake',
           'Sunset at Katpana Cold Desert'
-        ]
+        ],
+        meals: ['Breakfast at hotel', 'Lunch at Shigar Fort', 'Desert BBQ dinner']
       },
       {
         day: 5,
@@ -159,7 +164,8 @@ export const packages: Package[] = [
           '3–4 hour trek to Fairy Meadows',
           'Camp setup + sunset view of Nanga Parbat'
         ],
-        accommodation: 'Fairy Meadows Cottages / Campsites'
+        accommodation: 'Fairy Meadows Cottages / Campsites',
+        meals: ['Breakfast at hotel', 'Trail lunch (packed)', 'Campfire dinner']
       },
       {
         day: 3,
@@ -223,7 +229,8 @@ export const packages: Package[] = [
           'Jeep to Kumrat',
           'Campsite riverside night stay'
         ],
-        accommodation: 'Kumrat Glamping Pods / Forest Camps'
+        accommodation: 'Kumrat Glamping Pods / Forest Camps',
+        meals: ['Breakfast en-route', 'Lunch in Thal', 'BBQ dinner at camp']
       },
       {
         day: 2,
