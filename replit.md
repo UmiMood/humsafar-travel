@@ -43,9 +43,12 @@ The application uses a comprehensive design system based on the "New York" Shadc
 
 **Routing Structure:**
 - `/` - HomePage (package browsing and filtering)
+- `/about` - AboutPage (company story, stats, values)
+- `/contact` - ContactPage (contact form, info cards, WhatsApp integration)
 - `/booking` - BookingPage (traveler details collection)
 - `/payment` - PaymentPage (payment instructions and confirmation)
 - Client-side routing with wouter, single-page application pattern
+- Header navigation with active state highlighting using useLocation hook
 
 ### Backend Architecture
 
