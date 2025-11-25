@@ -8,6 +8,8 @@ import { Header } from "@/components/Header";
 import HomePage from "@/pages/HomePage";
 import BookingPage from "@/pages/BookingPage";
 import PaymentPage from "@/pages/PaymentPage";
+import AboutPage from "@/pages/AboutPage";
+import ContactPage from "@/pages/ContactPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +20,8 @@ function Router() {
         <Route path="/" component={HomePage} />
         <Route path="/booking" component={BookingPage} />
         <Route path="/payment" component={PaymentPage} />
+        <Route path="/about" component={AboutPage} />
+        <Route path="/contact" component={ContactPage} />
         <Route component={NotFound} />
       </Switch>
     </>

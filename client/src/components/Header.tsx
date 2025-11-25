@@ -22,12 +22,16 @@ export function Header() {
               Packages
             </a>
           </Link>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover-elevate active-elevate-2 px-3 py-2 rounded-md">
-            About
-          </a>
-          <a href="#" className="text-sm font-medium text-muted-foreground hover-elevate active-elevate-2 px-3 py-2 rounded-md">
-            Contact
-          </a>
+          <Link href="/about">
+            <a className="text-sm font-medium text-muted-foreground hover-elevate active-elevate-2 px-3 py-2 rounded-md" data-testid="link-about">
+              About
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a className="text-sm font-medium text-muted-foreground hover-elevate active-elevate-2 px-3 py-2 rounded-md" data-testid="link-contact">
+              Contact
+            </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">
