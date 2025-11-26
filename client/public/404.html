@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+    <script>
+      (function preserveSpaRoute() {
+        const l = window.location;
+        const segments = l.pathname.split("/").filter(Boolean);
+        const repoSegment = segments.shift() ?? "";
+        const path = segments.join("/").replace(/&/g, "~and~");
+        const search = l.search ? l.search.slice(1).replace(/&/g, "~and~") : "";
+        const querySuffix = search ? `&${search}` : "";
+        const redirectUrl = `${l.origin}/${repoSegment}/?/${path}${querySuffix}${l.hash}`;
+        l.replace(redirectUrl);
+      })();
+    </script>
+  </body>
+</html>
+

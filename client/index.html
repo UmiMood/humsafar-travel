@@ -9,6 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+      (function handleGhPagesRedirect() {
+        const { search, hash, pathname } = window.location;
+        if (!search.startsWith("?/")) {
+          return;
+        }
+        const decode = (value) => value.replace(/~and~/g, "&");
+        const params = search.slice(2).split("&");
+        const redirectedPath = decode(params.shift() ?? "");
+        const query = params.length ? `?${decode(params.join("&"))}` : "";
+        const segments = pathname.split("/").filter(Boolean);
+        const repoSegment = segments.length ? `/${segments[0]}` : "";
+        const newUrl = `${repoSegment}/${redirectedPath}`.replace(/\/{2,}/g, "/") + query + hash;
+        window.history.replaceState(null, "", newUrl);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
