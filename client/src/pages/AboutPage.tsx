@@ -37,7 +37,7 @@ export default function AboutPage() {
       <div className="bg-primary/10 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold font-serif mb-6" data-testid="text-about-title">
-            About Musafar
+            About Humsafar
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Your trusted partner for exploring the majestic landscapes, rich culture, and warm hospitality of Pakistan.
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6 text-center">Our Story</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              Musafar was founded in 2017 with a simple mission: to make the stunning beauty of Pakistan accessible to travelers from around the world. The name "Musafar" means "traveler" in Urdu, reflecting our deep connection to the spirit of exploration.
+              Humsafar was founded in 2017 with a simple mission: to make the stunning beauty of Pakistan accessible to travelers from around the world. The name "Humsafar" means "traveler" in Urdu, reflecting our deep connection to the spirit of exploration.
             </p>
             <p>
               What started as a small team of passionate adventurers has grown into a trusted travel company, connecting thousands of travelers with unforgettable experiences across the northern regions of Pakistan—from the turquoise lakes of Skardu to the alpine meadows of Fairy Meadows.
@@ -96,7 +96,7 @@ export default function AboutPage() {
         </div>
 
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6">Why Choose Musafar?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold font-serif mb-6">Why Choose Humsafar?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="flex justify-center mb-4">

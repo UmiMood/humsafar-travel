@@ -16,7 +16,7 @@ export default function PaymentPage() {
 
   const whatsappNumber = '+923001234567';
   const accountNumber = '1234567890';
-  const accountTitle = 'Musafar Travel Services';
+  const accountTitle = 'Humsafar Travel Services';
   const bankName = 'HBL - Habib Bank Limited';
 
   useEffect(() => {

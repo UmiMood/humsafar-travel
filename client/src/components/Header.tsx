@@ -16,7 +16,7 @@ export function Header() {
           className="flex items-center gap-2 hover-elevate active-elevate-2 rounded-md px-3 py-2 -ml-3" 
           data-testid="link-home"
         >
-          <span className="text-2xl font-bold font-serif text-primary">Musafar</span>
+          <span className="text-2xl font-bold font-serif text-primary">Humsafar</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

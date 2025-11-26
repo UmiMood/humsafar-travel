@@ -1,8 +1,8 @@
-# Musafar - Travel Package Booking Platform
+# Humsafar - Travel Package Booking Platform
 
 ## Overview
 
-Musafar is a travel package booking website focused on Pakistani tourism destinations. The platform allows users to browse curated travel packages, filter by destination and budget, and complete bookings through a multi-step process. The application features a modern, card-based UI inspired by platforms like Airbnb and Booking.com, with a color palette reflecting Pakistani regional tourism (teals, greens).
+Humsafar is a travel package booking website focused on Pakistani tourism destinations. The platform allows users to browse curated travel packages, filter by destination and budget, and complete bookings through a multi-step process. The application features a modern, card-based UI inspired by platforms like Airbnb and Booking.com, with a color palette reflecting Pakistani regional tourism (teals, greens).
 
 The platform connects travelers with local tour operators, showcasing packages for destinations like Skardu, Hunza Valley, Fairy Meadows, and other scenic locations across Pakistan.
 
